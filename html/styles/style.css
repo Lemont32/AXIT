@@ -1,3 +1,146 @@
-h1 {
-    color: red;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    }
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    margin: 0;
+}
+
+/*Header
+===================*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 72px;
+
+    background-color: black;
+
+    padding: 0 150px;
+
+    vertical-align: middle;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.header-nav a:not(:last-child) {
+    margin-right: 50px;
+}
+
+/*Main
+========================*/
+
+.section {
+    width: 100%;
+    padding: 110px 150px;
+    background-color: #ffffff;
+}
+
+.section_darkgray {
+    position: relative;
+
+    background-color: #9A9A9A; 
+}
+
+.section_darkgray::before {
+    display: inline-block;
+    content: 'Insert your picture here';
+
+    position: absolute;
+    top: 50px;  
+    left: 50%;  
+     
+    transform: translateX(-50%);
+
+    font-size: 33px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.title_main {
+    position: relative;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: white;
+    line-height: 43.2px;
+
+    max-width: 520px;
+
+    margin-top: 20px;
+}
+
+.title_main::after {
+    content: "";
+
+    position: absolute;
+    top: 120px;
+    left: 0;
+
+    width: 64px;
+    height: 2px;
+
+    background-color: #ffffff;
+
+}
+
+.section-content {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+
+    color: #86878B;
+}
+
+.section-content_light {
+    margin-top: 70px;
+    color: #ffffff;
+
+    max-width: 470px;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+
+    padding: 10px 35px;
+
+    font-size: 15px;
+}
+
+.btn-gray {
+    background-color: #9A9A9A;
+    color: #ffffff;
+
+    margin-top: 45px;
+
+    border: 2px solid white;
 }
