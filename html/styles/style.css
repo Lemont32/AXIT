@@ -65,9 +65,12 @@ body {
 .section {
     width: 100%;
     padding: 110px 150px;
-    background-color: #ffffff;
+    background-color: #ffffff; 
 }
 
+.section_gray {
+    background-color: #F5F5F5;
+}
 
 .section_darkgray {
     position: relative;
@@ -87,6 +90,16 @@ body {
 
     font-size: 33px;
     color: rgba(255, 255, 255, 0.4);
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.container_flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .title_main {
@@ -158,6 +171,19 @@ body {
     font-size: 15px;
 }
 
+.btn_orange {
+    background-color: #FF8B38;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.2s linear;
+}
+
+.btn_orange:hover {
+    background-color: #ec6b0f;
+    cursor: pointer;
+}
+
 .btn-gray {
     background-color: #9A9A9A;
     color: #ffffff;
@@ -175,15 +201,13 @@ body {
 
 /*Form
 =================*/
-.container {
-    margin: 0;
-    padding: 0;
-}
+
 
 .container__preview {
     display: flex;
     justify-content: space-between;
 }
+
 .form {
     display: flex;
     flex-direction: column;
@@ -235,4 +259,96 @@ body {
 .input_submit:hover {
     background-color: #ec6b0f;
     cursor: pointer;
+}
+
+/*Media
+==================*/
+
+.section_media {
+    padding: 0;
+
+    
+}
+
+.container_media {
+    position: relative;
+
+    padding: 18px 150px;
+
+    box-shadow: 0 1px 2px 1px #86878B;
+}
+
+.container_media  .title { 
+    color: #86878B;
+    font-size: 20px;
+}
+
+.container_media .section-content {
+    max-width: 375px;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+}
+
+.brands {
+    position: absolute;
+    top: 15px;
+    right: 150px;
+}
+
+.brands i {
+    margin-left: 50px;
+}
+
+/*Tabs
+===================*/
+.container_item__flex {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+    
+}
+
+.container_flex .container_item:nth-child(2) {
+    max-width: 455px;
+}
+
+
+.tab {
+    font-size: 15px;
+    font-weight: 400;
+
+    background-color: #333333;
+    color: white;
+
+    padding: 45px;    
+}
+
+.tab_active {
+    background-color: #FF8B38;
+    color: white;
+    
+    transition: background-color 0.2s linear;
+}
+
+.tab:hover {
+    cursor: pointer;
+}
+
+.tab:not(:last-child) {
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.container_item .title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container_item .section-content {
+    max-width: 100%;
+    margin: 48px 0;
 }
