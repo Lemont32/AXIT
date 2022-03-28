@@ -23,6 +23,10 @@ input {
     border: none;
 }
 
+button {
+    border: none;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 
@@ -303,17 +307,9 @@ body {
 
 /*Tabs
 ===================*/
-.container_item__flex {
-    display: flex;
-    flex-direction: column;
 
-    border-radius: 5px;
 
-    overflow: hidden;
-    
-}
-
-.container_flex .container_item:nth-child(2) {
+.container_item_text {
     max-width: 455px;
 }
 
@@ -329,10 +325,7 @@ body {
 }
 
 .tab_active {
-    background-color: #FF8B38;
-    color: white;
-    
-    transition: background-color 0.2s linear;
+    background-color: #FF8B38;    
 }
 
 .tab:hover {
@@ -341,6 +334,14 @@ body {
 
 .tab:not(:last-child) {
     border-bottom: 1px solid #F5F5F5;
+}
+
+.container_item_text {
+    display: none;
+}
+
+.container_item__visible {
+    display: block;
 }
 
 .container_item .title {
@@ -352,3 +353,14 @@ body {
     max-width: 100%;
     margin: 48px 0;
 }
+
+.container_item__flex {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+    
+}
+
