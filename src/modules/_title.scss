@@ -1,0 +1,44 @@
+.title_main {
+    position: relative;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: white;
+    line-height: 43.2px;
+
+    max-width: 520px;
+
+    margin-top: 20px;
+}
+
+.title_main::after {
+    content: "";
+
+    position: absolute;
+    top: 120px;
+    left: 0;
+
+    width: 64px;
+    height: 2px;
+
+    background-color: #ffffff;
+
+}
+
+.title_form {
+    width: 100%;
+
+    background-color: #F5F5F5;
+
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #333333;
+
+    padding: 15px 54px;
+}
+
+.title_form span{
+    color: #FF8B38;
+}

@@ -1,0 +1,37 @@
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+
+    padding: 10px 35px;
+
+    font-size: 15px;    
+}
+
+.btn_orange {
+    background-color: #FF8B38;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.2s linear;
+}
+
+.btn_orange:hover {
+    background-color: #ec6b0f;
+    cursor: pointer;
+}
+
+.btn-gray {
+    background-color: #9A9A9A;
+    color: #ffffff;
+
+    margin-top: 45px;
+
+    border: 2px solid white;
+    transition: background-color 0.2s linear;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #858383;
+    }
+}
+
