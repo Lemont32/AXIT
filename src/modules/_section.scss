@@ -29,11 +29,23 @@
 }
 
 .section-content {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     font-weight: 300;
 
     color: #86878B;
+
+    max-width: 395px;    
+}
+
+.section-content_item__inline {
+    margin-left: 30px;
+}
+
+.section-content_item {
+    display: flex;
+
+    margin: 35px 0;
 }
 
 .section-content_light {

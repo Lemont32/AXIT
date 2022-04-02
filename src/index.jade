@@ -62,15 +62,34 @@ block page
 			.container_item
 				img(src='img/image_right_u255.png' alt='/')
 	section.section
-		.container
-			h3.title Sub list section
-			.section-content
-			img(src='/' alt='/')
-	section.section.section-gray
-		.container
-			h3.title Standard Picture Section
-			.section-content
-			img(src='/' alt='/')
+		.container.container_flex
+			.container_item
+				.img_none Insert you picture here
+			.container_item.container_item_text.container_item__visible
+				h3.title Sub list section
+				.section-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+					.section-content_item 
+						a(href="#") 
+							i.fa.fa-cloud-upload.fa-4x(style='color: #ff8b38;' aria-hidden="true") 							
+						.section-content_item__inline
+							.section-content_title Title
+							.section-content_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+					.section-content_item 
+						a(href="#") 
+							i.fa.fa-cloud-upload.fa-4x(style='color: #ff8b38;' aria-hidden="true") 							
+						.section-content_item__inline
+							.section-content_title Title
+							.section-content_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin ravida dolor sit amet lacus accumsan et viverra justo commodo.
+
+	section.section.section_gray
+		.container.container_flex
+			.container_item.container_item_text.container_item__visible
+				h3.title Standard Picture Section
+				.section-content 
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. 
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+			.container_item
+				.img_none Insert you picture here
 	section.section
 		.container
 			h3.title.title_uppercase WHY THIS IS AWESOME
@@ -97,7 +116,7 @@ block page
 		.container
 			h2.download-title STYLISH AXURE DESIGN
 			p.download-content
-				| Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!
+				| Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!
 			button.download-btn
 	section.section
 		.container

@@ -1,3 +1,24 @@
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+
+    position: relative;
+}
+
+.title:after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 45px;
+
+    width: 64px;
+    height: 2px;
+
+    background-color: #FF8B38;
+}
+
 .title_main {
     position: relative;
 
@@ -41,4 +62,13 @@
 
 .title_form span{
     color: #FF8B38;
+}
+
+.section-content_title {
+    font-size: 14;
+    font-weight: 700;
+
+    color: black;
+
+    margin-bottom: 5px;
 }
