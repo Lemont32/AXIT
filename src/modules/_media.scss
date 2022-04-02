@@ -1,0 +1,36 @@
+.section_media {
+    padding: 0;
+
+    
+}
+
+.container_media {
+    position: relative;
+
+    padding: 18px 150px;
+
+    box-shadow: 0 1px 2px 1px #86878B;
+}
+
+.container_media  .title { 
+    color: #86878B;
+    font-size: 20px;
+}
+
+.container_media .section-content {
+    max-width: 375px;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+}
+
+.brands {
+    position: absolute;
+    top: 15px;
+    right: 150px;
+}
+
+.brands i {
+    margin-left: 50px;
+}

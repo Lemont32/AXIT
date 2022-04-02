@@ -1,0 +1,44 @@
+.section {
+    width: 100%;
+    padding: 110px 150px;
+    background-color: #ffffff; 
+}
+
+.section_gray {
+    background-color: #F5F5F5;
+}
+
+.section_darkgray {
+    position: relative;
+
+    background-color: #9A9A9A; 
+}
+
+.section_darkgray::before {
+    display: inline-block;
+    content: 'Insert your picture here';
+
+    position: absolute;
+    top: 50px;  
+    left: 50%;  
+     
+    transform: translateX(-50%);
+
+    font-size: 33px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.section-content {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+
+    color: #86878B;
+}
+
+.section-content_light {
+    margin-top: 70px;
+    color: #ffffff;
+
+    max-width: 470px;
+}
