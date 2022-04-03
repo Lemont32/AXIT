@@ -54,3 +54,21 @@
 
     max-width: 470px;
 }
+
+.container_item__center-text {
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features_item {
+    max-width: 336px;
+}
+
+.features_text {
+    font-size: 14px;
+    font-weight: 300;
+}

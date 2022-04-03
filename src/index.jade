@@ -8,7 +8,7 @@ block page
 				h1.title.title_main MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
 				.section-content.section-content_light
 					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-				button.btn.btn-gray Download
+				button.btn.btn_gray Download
 			form.form(action='/' method='post')
 				.title.title_form
 					| Try Your 
@@ -20,7 +20,7 @@ block page
 				input.input.input_submit(type='submit' name='button' value='Get started')
 	section.section.section_media
 		.container.container_media
-			h3.title Social Media
+			h3.title.title_media Social Media
 			.section-content
 				| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
 			.brands
@@ -64,7 +64,7 @@ block page
 	section.section
 		.container.container_flex
 			.container_item
-				.img_none Insert you picture here
+				.img.img_empty Insert you picture here
 			.container_item.container_item_text.container_item__visible
 				h3.title Sub list section
 				.section-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
@@ -89,21 +89,104 @@ block page
 					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. 
 					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
 			.container_item
-				.img_none Insert you picture here
+				.img.img_empty Insert you picture here
 	section.section
 		.container
-			h3.title.title_uppercase WHY THIS IS AWESOME
-			.section-content
-			.features
-	section.section.section-gray
-		.container
+			.container_item.container_item__center-text
+				h3.title.title_uppercase WHY THIS IS AWESOME
+				.section-content Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				.features
+					.features_item						
+						i.fa.fa-lightbulb-o.fa-4x(style='color: #ff8b38;' aria-hidden="true")
+						.features_title Thoughtful Design
+						.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+					.features_item
+						i.fa.fa-keyboard-o.fa-4x(style='color: #ff8b38;' aria-hidden="true")
+						.features_title Thoughtful Design
+						.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+					.features_item
+						i.fa.fa-bolt.fa-4x(style='color: #ff8b38;' aria-hidden="true")
+						.features_title Thoughtful Design
+						.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+						
+	section.section.section_gray
+		.container_item.container_item__center-text
 			h3.title.title_uppercase PRICING OPTIONS
-			.section-content Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			.section-content Lorem ipsum dolor sit amet, consectetur adipiscing elit.		
 			.rates
-				.rate
-				.rate.rate-active
-				.rate
-			img(src='/' alt='/')
+				.rates_item
+					table.table
+						tr
+							td.rates_td.rates_td__black Basic
+						tr
+							td.rates_td.rates_td__large 
+								.sub $
+								span 0
+						tr
+							td.rates_td.rates_td__black Free for life
+						tr
+							td.rates_td.rates_td__orange 
+						tr
+							td.rates_td 1 GB OF SPACE
+						tr
+							td.rates_td 10 GB OF BANDWIDTH
+						tr
+							td.rates_td 3 WEBSITES
+						tr
+							td.rates_td BASIC CUSTOMIZATION
+						tr
+							td.rates_td WORDPRESS INTEGRATION
+						tr
+							td.rates_td EMAIL SUPPORT
+				.rates_item
+					table.table
+						tr
+							td.rates_td.rates_td__black Professional
+						tr
+							td.rates_td.rates_td__large 
+								.sub $
+								span 19
+						tr
+							td.rates_td.rates_td__black Monthly Payment
+						tr
+							td.rates_td.rates_td__orange-text OUR MOST POPULAR
+						tr
+							td.rates_td 5 GB OF SPACE
+						tr
+							td.rates_td 50 GB OF BANDWIDTH
+						tr
+							td.rates_td 12 WEBSITES
+						tr
+							td.rates_td ADVANCED  CUSTOMIZATION
+						tr
+							td.rates_td WORDPRESS INTEGRATION
+						tr
+							td.rates_td EMAIL SUPPORT
+				.rates_item
+					table.table
+						tr
+							td.rates_td.rates_td__black Enterprise
+						tr
+							td.rates_td.rates_td__large 
+								.sub $
+								span 70
+						tr
+							td.rates_td.rates_td__black Monthly Payment
+						tr
+							td.rates_td.rates_td__orange
+						tr
+							td.rates_td UNLIMITED SPACE
+						tr
+							td.rates_td UNLIMITED BANDWIDTH
+						tr
+							td.rates_td 100 WEBSITES
+						tr
+							td.rates_td ADVANCED  CUSTOMIZATION
+						tr
+							td.rates_td WORDPRESS INTEGRATION
+						tr
+							td.rates_td EMAIL SUPPORT
+			
 	section.section
 		.container
 			h3.title.title_uppercase WHAT OUR CUSTOMERS ARE SAYING
