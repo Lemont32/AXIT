@@ -21,6 +21,19 @@
   font-size: 14px;
   font-weight: 300;
   color: #ffffff; }
+  .header-nav__link {
+    position: relative; }
+    .header-nav__link::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: #ffffff;
+      transition: width 0.25s ease-in; }
+  .header-nav__link:hover::after {
+    width: 100%; }
 
 .header-nav a:not(:last-child) {
   margin-right: 50px; }
@@ -128,7 +141,7 @@ body {
   cursor: pointer; }
 
 .input_submit {
-  padding: 17px 0;
+  padding: 15px 0;
   background-color: #FF8B38;
   font-size: 15px;
   color: white;
@@ -218,7 +231,21 @@ body {
   right: 150px; }
 
 .brands i {
-  margin-left: 50px; }
+  margin-left: 50px;
+  color: #86878B; }
+  .brands i:hover {
+    color: #303232;
+    transition: color 0.25s ease-in; }
+
+.icon {
+  border: 3px solid #FF8B38;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  margin: 0 auto; }
+  .icon .fa {
+    line-height: 64px; }
 
 .container_item_text {
   max-width: 455px; }
@@ -301,6 +328,8 @@ body {
   font-size: 20px;
   color: #333333;
   padding: 15px 54px; }
+  .title_form::after {
+    display: none; }
 
 .title_form span {
   color: #FF8B38; }
@@ -363,3 +392,40 @@ body {
   background-color: #FF8B38;
   padding: 10px 0;
   color: #ffffff; }
+
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px; }
+
+.reviews__item {
+  max-width: 275px;
+  position: relative; }
+
+.reviews__text {
+  background: url("../img/u229.png") no-repeat center;
+  width: auto;
+  height: 147px;
+  padding: 20px 18px;
+  text-align: start; }
+
+.reviews__photo {
+  position: absolute;
+  left: 4px;
+  top: 150px;
+  background-color: #707070;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; }
+
+.reviews__author {
+  text-align: center;
+  margin-top: 10px; }
+
+.reviews__name {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 6px; }
+
+.reviews__prof {
+  font-size: inherit; }

@@ -33,4 +33,27 @@
 
 .brands i {
     margin-left: 50px;
+    color: #86878B;
+    
+
+    &:hover {
+        color:#303232;
+        transition: color 0.25s ease-in;        
+    }
+}
+
+.icon {
+    border: 3px solid #FF8B38;
+    border-radius: 50%;
+
+    width: 70px;
+    height: 70px;
+
+    text-align: center;
+
+    margin: 0 auto;
+
+    .fa {
+        line-height: 64px;
+    }
 }

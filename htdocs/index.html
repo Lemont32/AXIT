@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <div class="img img_header"><img src="img/Logo-header.png" alt="Logo"></div>
-      <div class="header-nav"><a href="#">Features</a><a href="#">About</a><a href="#">Prising</a><a href="#">Reviews</a><a href="#">Contact</a></div>
+      <div class="header-nav"><a href="#" class="header-nav__link">Features</a><a href="#" class="header-nav__link">About</a><a href="#" class="header-nav__link">Prising</a><a href="#" class="header-nav__link">Reviews</a><a href="#" class="header-nav__link">Contact</a></div>
     </header>
     <main>
       <section class="section section_darkgray">
@@ -34,7 +34,7 @@
         <div class="container container_media">
           <h3 class="title title_media">Social Media</h3>
           <div class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</div>
-          <div class="brands"><a href="#"><i style="color: #86878B;" aria-hidden="true" class="fa fa-facebook fa-4x"></i></a><a href="#"><i style="color: #86878B;" aria-hidden="true" class="fa fa-twitter fa-4x"></i></a><a href="#"><i style="color: #86878B;" aria-hidden="true" class="fa fa-google-plus fa-4x"></i></a><a href="#"><i style="color: #86878B;" aria-hidden="true" class="fa fa-pinterest fa-4x"></i></a><a href="#"><i style="color: #86878B;" aria-hidden="true" class="fa fa-instagram fa-4x"></i></a><a href="#"><i style="color: #86878B;" aria-hidden="true" class="fa fa-stumbleupon fa-4x"></i></a><a href="#"><i style="color: #86878B;" aria-hidden="true" class="fa fa-rss fa-4x"></i></a></div>
+          <div class="brands"><a href="#"><i aria-hidden="true" class="fa fa-facebook fa-4x"></i></a><a href="#"><i aria-hidden="true" class="fa fa-twitter fa-4x"></i></a><a href="#"><i aria-hidden="true" class="fa fa-google-plus fa-4x"></i></a><a href="#"><i aria-hidden="true" class="fa fa-pinterest fa-4x"></i></a><a href="#"><i aria-hidden="true" class="fa fa-instagram fa-4x"></i></a><a href="#"><i aria-hidden="true" class="fa fa-stumbleupon fa-4x"></i></a><a href="#"><i aria-hidden="true" class="fa fa-rss fa-4x"></i></a></div>
         </div>
       </section>
       <section class="section section_gray">
@@ -70,13 +70,15 @@
           <div class="container_item container_item_text container_item__visible">
             <h3 class="title">Sub list section</h3>
             <div class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-              <div class="section-content_item"> <a href="#"> <i style="color: #ff8b38;" aria-hidden="true" class="fa fa-cloud-upload fa-4x">							</i></a>
+              <div class="section-content_item"> <a href="#">
+                  <div class="icon"> <i style="color: #ff8b38;" aria-hidden="true" class="fa fa-cloud-upload fa-3x">							</i></div></a>
                 <div class="section-content_item__inline">
                   <div class="section-content_title">Title</div>
                   <div class="section-content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</div>
                 </div>
               </div>
-              <div class="section-content_item"> <a href="#"> <i style="color: #ff8b38;" aria-hidden="true" class="fa fa-cloud-upload fa-4x">							</i></a>
+              <div class="section-content_item"> <a href="#">
+                  <div class="icon"><i style="color: #ff8b38;" aria-hidden="true" class="fa fa-cloud-upload fa-3x">							</i></div></a>
                 <div class="section-content_item__inline">
                   <div class="section-content_title">Title</div>
                   <div class="section-content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin ravida dolor sit amet lacus accumsan et viverra justo commodo.</div>
@@ -104,19 +106,23 @@
         <div class="container">
           <div class="container_item container_item__center-text">
             <h3 class="title title_uppercase">WHY THIS IS AWESOME</h3>
-            <div class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-            <div class="features">
-              <div class="features_item">						<i style="color: #ff8b38;" aria-hidden="true" class="fa fa-lightbulb-o fa-4x"></i>
-                <div class="features_title">Thoughtful Design</div>
-                <div class="features_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</div>
-              </div>
-              <div class="features_item"><i style="color: #ff8b38;" aria-hidden="true" class="fa fa-keyboard-o fa-4x"></i>
-                <div class="features_title">Thoughtful Design</div>
-                <div class="features_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</div>
-              </div>
-              <div class="features_item"><i style="color: #ff8b38;" aria-hidden="true" class="fa fa-bolt fa-4x"></i>
-                <div class="features_title">Thoughtful Design</div>
-                <div class="features_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</div>
+            <div class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <div class="features">
+                <div class="features_item">
+                  <div class="icon"><i style="color: #ff8b38;" aria-hidden="true" class="fa fa-lightbulb-o fa-4x"></i></div>
+                  <div class="features_title">Thoughtful Design</div>
+                  <div class="features_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</div>
+                </div>
+                <div class="features_item">
+                  <div class="icon"><i style="color: #ff8b38;" aria-hidden="true" class="fa fa-keyboard-o fa-3x"></i></div>
+                  <div class="features_title">Thoughtful Design</div>
+                  <div class="features_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</div>
+                </div>
+                <div class="features_item">
+                  <div class="icon"><i style="color: #ff8b38;" aria-hidden="true" class="fa fa-bolt fa-4x"></i></div>
+                  <div class="features_title">Thoughtful Design</div>
+                  <div class="features_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</div>
+                </div>
               </div>
             </div>
           </div>
@@ -240,12 +246,36 @@
       </section>
       <section class="section">
         <div class="container">
-          <h3 class="title title_uppercase">WHAT OUR CUSTOMERS ARE SAYING</h3>
-          <div class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-          <div class="reviews">
-            <div class="review"></div>
-            <div class="review"></div>
-            <div class="review"></div>
+          <div class="container_item container_item__center-text">
+            <h3 class="title title_uppercase">WHAT OUR CUSTOMERS ARE SAYING</h3>
+            <div class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <div class="reviews">
+                <div class="reviews__item">
+                  <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex,architecto eaque quo suscipit.</div>
+                  <div class="reviews__photo"></div>
+                  <div class="reviews__author">
+                    <div class="reviews__name">Jeremy H.</div>
+                    <div class="reviews__prof">Manager</div>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex,architecto eaque quo suscipit.</div>
+                  <div class="reviews__photo"></div>
+                  <div class="reviews__author">
+                    <div class="reviews__name">John S.</div>
+                    <div class="reviews__prof">Freelancer</div>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex,architecto eaque quo suscipit.</div>
+                  <div class="reviews__photo"></div>
+                  <div class="reviews__author">
+                    <div class="reviews__name">Susan W.</div>
+                    <div class="reviews__prof">Photographer</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

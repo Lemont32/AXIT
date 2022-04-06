@@ -65,7 +65,13 @@
     color: #333333;
 
     padding: 15px 54px;
+
+    &::after {
+        display: none;
+    }
 }
+
+
 
 .title_form span{
     color: #FF8B38;

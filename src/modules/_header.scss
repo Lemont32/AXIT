@@ -19,8 +19,32 @@
     font-size: 14px;
     font-weight: 300;
     color: #ffffff;
+
+    &__link {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+
+            width: 0;
+            height: 1px;
+            background-color: #ffffff;
+            
+            transition: width 0.25s ease-in;
+        }
+    }
+
+    &__link:hover {
+        &::after {
+            width: 100%;
+        }
+    }
 }
 
 .header-nav a:not(:last-child) {
     margin-right: 50px;
 }
+

@@ -25,19 +25,19 @@ block page
 				| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
 			.brands
 				a(href='#')
-					i.fa.fa-facebook.fa-4x(style='color: #86878B;' aria-hidden='true')
+					i.fa.fa-facebook.fa-4x(aria-hidden='true')
 				a(href='#')
-					i.fa.fa-twitter.fa-4x(style='color: #86878B;' aria-hidden='true')
+					i.fa.fa-twitter.fa-4x(aria-hidden='true')
 				a(href='#')
-					i.fa.fa-google-plus.fa-4x(style='color: #86878B;' aria-hidden='true')
+					i.fa.fa-google-plus.fa-4x(aria-hidden='true')
 				a(href='#')
-					i.fa.fa-pinterest.fa-4x(style='color: #86878B;' aria-hidden='true')
+					i.fa.fa-pinterest.fa-4x(aria-hidden='true')
 				a(href='#')
-					i.fa.fa-instagram.fa-4x(style='color: #86878B;' aria-hidden='true')
+					i.fa.fa-instagram.fa-4x(aria-hidden='true')
 				a(href='#')
-					i.fa.fa-stumbleupon.fa-4x(style='color: #86878B;' aria-hidden='true')
+					i.fa.fa-stumbleupon.fa-4x(aria-hidden='true')
 				a(href='#')
-					i.fa.fa-rss.fa-4x(style='color: #86878B;' aria-hidden='true')
+					i.fa.fa-rss.fa-4x(aria-hidden='true')
 	section.section.section_gray
 		.container.container_flex
 			.container_item.container_item__flex
@@ -69,14 +69,16 @@ block page
 				h3.title Sub list section
 				.section-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
 					.section-content_item 
-						a(href="#") 
-							i.fa.fa-cloud-upload.fa-4x(style='color: #ff8b38;' aria-hidden="true") 							
+						a(href="#")
+							.icon 
+								i.fa.fa-cloud-upload.fa-3x(style='color: #ff8b38;' aria-hidden="true") 							
 						.section-content_item__inline
 							.section-content_title Title
 							.section-content_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
 					.section-content_item 
-						a(href="#") 
-							i.fa.fa-cloud-upload.fa-4x(style='color: #ff8b38;' aria-hidden="true") 							
+						a(href="#")
+							.icon
+								i.fa.fa-cloud-upload.fa-3x(style='color: #ff8b38;' aria-hidden="true") 							
 						.section-content_item__inline
 							.section-content_title Title
 							.section-content_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin ravida dolor sit amet lacus accumsan et viverra justo commodo.
@@ -95,19 +97,22 @@ block page
 			.container_item.container_item__center-text
 				h3.title.title_uppercase WHY THIS IS AWESOME
 				.section-content Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				.features
-					.features_item						
-						i.fa.fa-lightbulb-o.fa-4x(style='color: #ff8b38;' aria-hidden="true")
-						.features_title Thoughtful Design
-						.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
-					.features_item
-						i.fa.fa-keyboard-o.fa-4x(style='color: #ff8b38;' aria-hidden="true")
-						.features_title Thoughtful Design
-						.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
-					.features_item
-						i.fa.fa-bolt.fa-4x(style='color: #ff8b38;' aria-hidden="true")
-						.features_title Thoughtful Design
-						.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+					.features
+						.features_item
+							.icon
+								i.fa.fa-lightbulb-o.fa-4x(style='color: #ff8b38;' aria-hidden="true")
+							.features_title Thoughtful Design
+							.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+						.features_item
+							.icon
+								i.fa.fa-keyboard-o.fa-3x(style='color: #ff8b38;' aria-hidden="true")
+							.features_title Thoughtful Design
+							.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+						.features_item
+							.icon
+								i.fa.fa-bolt.fa-4x(style='color: #ff8b38;' aria-hidden="true")
+							.features_title Thoughtful Design
+							.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
 						
 	section.section.section_gray
 		.container_item.container_item__center-text
@@ -189,12 +194,28 @@ block page
 			
 	section.section
 		.container
-			h3.title.title_uppercase WHAT OUR CUSTOMERS ARE SAYING
-			.section-content Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			.reviews
-				.review
-				.review
-				.review
+			.container_item.container_item__center-text
+				h3.title.title_uppercase WHAT OUR CUSTOMERS ARE SAYING
+				.section-content Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					.reviews
+						.reviews__item
+							.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex,architecto eaque quo suscipit.
+							.reviews__photo
+							.reviews__author
+								.reviews__name Jeremy H.
+								.reviews__prof Manager
+						.reviews__item
+							.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex,architecto eaque quo suscipit.
+							.reviews__photo
+							.reviews__author
+								.reviews__name John S.
+								.reviews__prof Freelancer
+						.reviews__item
+							.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex,architecto eaque quo suscipit.
+							.reviews__photo
+							.reviews__author
+								.reviews__name Susan W.
+								.reviews__prof Photographer
 	section.section.section_download
 		.container
 			h2.download-title STYLISH AXURE DESIGN
