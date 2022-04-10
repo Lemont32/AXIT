@@ -86,9 +86,10 @@
     margin-bottom: 5px;
 }
 
-.title.title_uppercase {
+h3.title_uppercase {
     font-family: "Raleway", sans-serif;
     font-size: 36px;
+    text-align: center;
     
     &::after {
         left: 50%;
@@ -96,6 +97,12 @@
 
         transform: translate(-50%);
 
+    }
+}
+
+h3.title_uppercase_darkgray {
+    &::after {
+        background-color: #ffffff;
     }
 }
 

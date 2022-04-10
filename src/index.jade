@@ -1,7 +1,7 @@
 extends ./tpl/layout
 
 block page
-	section.section.section_darkgray
+	section.section.section_darkgray.section__greetins
 		.container.container__preview
 			.section__preview
 				img(src='img/Logo.png' alt='Logo')
@@ -25,22 +25,22 @@ block page
 				| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
 			.brands
 				a(href='#')
-					i.fa.fa-facebook.fa-4x(aria-hidden='true')
+					i.fa.fa-facebook.fa-2x(aria-hidden='true')
 				a(href='#')
-					i.fa.fa-twitter.fa-4x(aria-hidden='true')
+					i.fa.fa-twitter.fa-2x(aria-hidden='true')
 				a(href='#')
-					i.fa.fa-google-plus.fa-4x(aria-hidden='true')
+					i.fa.fa-google-plus.fa-2x(aria-hidden='true')
 				a(href='#')
-					i.fa.fa-pinterest.fa-4x(aria-hidden='true')
+					i.fa.fa-pinterest.fa-2x(aria-hidden='true')
 				a(href='#')
-					i.fa.fa-instagram.fa-4x(aria-hidden='true')
+					i.fa.fa-instagram.fa-2x(aria-hidden='true')
 				a(href='#')
-					i.fa.fa-stumbleupon.fa-4x(aria-hidden='true')
+					i.fa.fa-stumbleupon.fa-2x(aria-hidden='true')
 				a(href='#')
-					i.fa.fa-rss.fa-4x(aria-hidden='true')
+					i.fa.fa-rss.fa-2x(aria-hidden='true')
 	section.section.section_gray
 		.container.container_flex
-			.container_item.container_item__flex
+			.container_item__flex
 				button.tab.tab_active(type='button') Tab 1
 				button.tab(type='button') Tab 3
 				button.tab(type='button') Tab 3
@@ -93,31 +93,30 @@ block page
 			.container_item
 				.img.img_empty Insert you picture here
 	section.section
-		.container
-			.container_item.container_item__center-text
-				h3.title.title_uppercase WHY THIS IS AWESOME
-				.section-content Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					.features
-						.features_item
-							.icon
-								i.fa.fa-lightbulb-o.fa-4x(style='color: #ff8b38;' aria-hidden="true")
-							.features_title Thoughtful Design
-							.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
-						.features_item
-							.icon
-								i.fa.fa-keyboard-o.fa-3x(style='color: #ff8b38;' aria-hidden="true")
-							.features_title Thoughtful Design
-							.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
-						.features_item
-							.icon
-								i.fa.fa-bolt.fa-4x(style='color: #ff8b38;' aria-hidden="true")
-							.features_title Thoughtful Design
-							.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+		.container			
+			h3.title.title_uppercase WHY THIS IS AWESOME
+			.section-content.section-content_center Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				.features
+					.features_item
+						.icon
+							i.fa.fa-lightbulb-o.fa-4x(style='color: #ff8b38;' aria-hidden="true")
+						.features_title Thoughtful Design
+						.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+					.features_item
+						.icon
+							i.fa.fa-keyboard-o.fa-3x(style='color: #ff8b38;' aria-hidden="true")
+						.features_title Thoughtful Design
+						.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
+					.features_item
+						.icon
+							i.fa.fa-bolt.fa-4x(style='color: #ff8b38;' aria-hidden="true")
+						.features_title Thoughtful Design
+						.features_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
 						
 	section.section.section_gray
-		.container_item.container_item__center-text
-			h3.title.title_uppercase PRICING OPTIONS
-			.section-content Lorem ipsum dolor sit amet, consectetur adipiscing elit.		
+		
+		h3.title.title_uppercase PRICING OPTIONS
+			.section-content.section-content_center Lorem ipsum dolor sit amet, consectetur adipiscing elit.		
 			.rates
 				.rates_item
 					table.table
@@ -194,39 +193,44 @@ block page
 			
 	section.section
 		.container
-			.container_item.container_item__center-text
-				h3.title.title_uppercase WHAT OUR CUSTOMERS ARE SAYING
-				.section-content Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					.reviews
-						.reviews__item
-							.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex,architecto eaque quo suscipit.
-							.reviews__photo
-							.reviews__author
-								.reviews__name Jeremy H.
-								.reviews__prof Manager
-						.reviews__item
-							.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex,architecto eaque quo suscipit.
-							.reviews__photo
-							.reviews__author
-								.reviews__name John S.
-								.reviews__prof Freelancer
-						.reviews__item
-							.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex,architecto eaque quo suscipit.
-							.reviews__photo
-							.reviews__author
-								.reviews__name Susan W.
-								.reviews__prof Photographer
-	section.section.section_download
+			h3.title.title_uppercase WHAT OUR CUSTOMERS ARE SAYING
+			.section-content.section-content_center Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				.reviews
+					.reviews__item
+						.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex,architecto eaque quo suscipit.
+						.reviews__photo
+						.reviews__author
+							.reviews__name Jeremy H.
+							.reviews__prof Manager
+					.reviews__item
+						.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex,architecto eaque quo suscipit.
+						.reviews__photo
+						.reviews__author
+							.reviews__name John S.
+							.reviews__prof Freelancer
+					.reviews__item
+						.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex,architecto eaque quo suscipit.
+						.reviews__photo
+						.reviews__author
+							.reviews__name Susan W.
+							.reviews__prof Photographer
+	section.section.section_darkgray
 		.container
-			h2.download-title STYLISH AXURE DESIGN
-			p.download-content
+			h3.title.title_uppercase.title_uppercase_darkgray STYLISH AXURE DESIGN
+			.section-content.section-content_darkgray.section-content_center
 				| Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!
-			button.download-btn
+			button.btn.btn_gray Download
 	section.section
 		.container
-			h2.section-title CONTACT US
-			.section-content Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			form.contact-form
-				button.download-btn.orange
+			h3.title.title_uppercase CONTACT US
+			.section-content.section-content_center Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			form.form-contact(action='/' method='post')	
+				.form-contact_item
+					input.input(type='text' name='name' placeholder='Name')
+					input.input(type='email' name='email' placeholder='Email')
+					input.input(type='text' name='subject' placeholder='Subject')
+				.form-contact_item
+					textarea(name="Message", cols="30", rows="10", placeholder='Message') 
+				
 
 

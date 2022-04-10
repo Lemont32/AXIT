@@ -12,11 +12,31 @@
     overflow: hidden;
 }
 
+.form-contact {
+    display: flex;
+    flex-direction: row;
+
+    max-width: 360px;
+    height: 365px;  
+    
+    background-color: white;
+
+    border-radius: 0 0 5px 5px;
+
+    overflow: hidden;
+}
+
+.form-contact_item {
+    display: flex;
+    flex-direction: column;
+}
+
 .input {
     margin: 0 30px;
     margin-top: 35px;
     padding: 10px;
     
+    font-size: 14px;
 
     color: #BDBDBD;
 
@@ -33,7 +53,7 @@
 }
 
 .input_submit {
-    padding: 15px 0;
+    padding: 17px 0;
 
     background-color: #FF8B38;
 

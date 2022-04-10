@@ -1,0 +1,42 @@
+.rates {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    margin-top: 80px;
+  }
+  
+  .table {
+    border-collapse: collapse; }
+  
+  .rates_td {
+    width: 345px;
+    font-size: 14px;
+    padding: 12px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #F5F5F5; }
+  
+  .rates_td__black {
+    background-color: #333333;
+    color: white;
+    border-bottom: 1px solid #707070; }
+  
+  .rates_td__large {
+    background-color: #333333;
+    color: white;
+    border-bottom: 1px solid #707070;
+    font-size: 94px; }
+  
+  .sub {
+    display: inline;
+    font-size: 36px; }
+  
+  .rates_td__orange {
+    background-color: #FF8B38;
+    height: 5px;
+    padding: 0;
+    color: #ffffff; }
+  
+  .rates_td__orange-text {
+    background-color: #FF8B38;
+    padding: 10px 0;
+    color: #ffffff; }
