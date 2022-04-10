@@ -70,3 +70,15 @@ body {
     justify-content: space-between;
 }
 
+.brands {
+    position: absolute;
+    top: 15px;
+    right: 150px; }
+  
+.brands i {
+    margin-left: 50px;
+    color: #86878B; }
+    
+.brands i:hover {
+      color: #303232;
+      transition: color 0.25s ease-in; }
