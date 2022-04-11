@@ -5,38 +5,38 @@
     margin-top: 80px;
   }
   
-  .table {
+.table {
     border-collapse: collapse; }
   
-  .rates_td {
+.rates_td {
     width: 345px;
     font-size: 14px;
     padding: 12px 0;
-    background-color: #ffffff;
-    border-bottom: 1px solid #F5F5F5; }
+    background-color: $white;
+    border-bottom: 1px solid $gray; }
   
-  .rates_td__black {
-    background-color: #333333;
-    color: white;
-    border-bottom: 1px solid #707070; }
+.rates_td__black {
+    background-color: $gray7;
+    color: $white;
+    border-bottom: 1px solid $gray8; }
   
-  .rates_td__large {
-    background-color: #333333;
-    color: white;
-    border-bottom: 1px solid #707070;
+.rates_td__large {
+    background-color: $gray7;
+    color: $white;
+    border-bottom: 1px solid $gray8;
     font-size: 94px; }
   
-  .sub {
+.sub {
     display: inline;
     font-size: 36px; }
   
-  .rates_td__orange {
-    background-color: #FF8B38;
+.rates_td__orange {
+    background-color: $orange;
     height: 5px;
     padding: 0;
-    color: #ffffff; }
+    color: $white; }
   
-  .rates_td__orange-text {
-    background-color: #FF8B38;
+.rates_td__orange-text {
+    background-color: $orange;
     padding: 10px 0;
-    color: #ffffff; }
+    color: $white; }

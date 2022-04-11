@@ -1,5 +1,5 @@
 .title {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $OpenSans;
     font-size: 20px;
     font-weight: 300;
 
@@ -17,26 +17,27 @@
         width: 64px;
         height: 2px;
     
-        background-color: #FF8B38;
+        background-color: $orange;
     }
 }
 
 .title_media {
     text-align: left;
-}
 
-.title_media::after {
-    display: none;
+    &::after {
+        display: none;
+    }
 }
 
 .title_main {
     position: relative;
 
-    font-family: 'Raleway', sans-serif;
+    font-family: $Raleway;
     font-size: 36px;
     font-weight: 300;
-    color: white;
+    color: $white;
     line-height: 43.2px;
+    text-align: left;
 
     max-width: 520px;
 
@@ -54,7 +55,7 @@
         width: 64px;
         height: 2px;
     
-        background-color: #ffffff;
+        background-color: $white;
     
     }
 }
@@ -63,12 +64,12 @@
 .title_form {
     width: 100%;
 
-    background-color: #F5F5F5;
+    background-color: $gray;
 
     font-weight: 400;
     font-size: 20px;
 
-    color: #333333;
+    color: $black2;
 
     padding: 15px 54px;
 
@@ -80,20 +81,11 @@
 
 
 .title_form span{
-    color: #FF8B38;
-}
-
-.section-content_title {
-    font-size: 14;
-    font-weight: 700;
-
-    color: black;
-
-    margin-bottom: 5px;
+    color: $orange;
 }
 
 h3.title_uppercase {
-    font-family: "Raleway", sans-serif;
+    font-family: $Raleway;
     font-size: 36px;
     text-align: center;
     
@@ -108,7 +100,7 @@ h3.title_uppercase {
 
 h3.title_uppercase_darkgray {
     &::after {
-        background-color: #ffffff;
+        background-color: $white;
     }
 }
 

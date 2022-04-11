@@ -5,7 +5,7 @@
     max-width: 360px;
     height: 362px;  
     
-    background-color: white;
+    background-color: $white;
 
     border-radius: 0 0 5px 5px;
 
@@ -20,7 +20,7 @@
     
     width: 100%;
     
-    background-color: white;
+    background-color: $white;
 
     border-radius: 0 0 5px 5px;
 
@@ -41,46 +41,47 @@
     
     font-size: 14px;
 
-    color: #BDBDBD;
+    color: $gray6;
 
-    border-bottom: 1px solid #BDBDBD;
+    border-bottom: 1px solid $gray6;
+
+    &:focus {
+        outline: none;
+        opacity: 0.6;
+    }
+
+    &:hover {
+        cursor: pointer;    
+    }
 }
 
-.input:focus {
-    outline: none;
-    opacity: 0.6;
-}
-
-.input:hover {
-    cursor: pointer;
-}
 
 .input_submit {
     flex-wrap: wrap;
 
     padding: 15px;
 
-    background-color: #FF8B38;
+    background-color: $orange;
 
     font-size: 15px;
-    color: white;
+    color: $white;
     margin: 0;
 
     margin-top: 45px;
     
     transition: background-color 0.2s linear;
-}
 
-.input_submit:hover {
-    background-color: #ec6b0f;
-    cursor: pointer;
+    &:hover {
+        background-color: $orange2;
+        cursor: pointer;
+    }
 }
 
 .textarea {
     border: none;
-    border-bottom: 1px solid #BDBDBD;
+    border-bottom: 1px solid $gray6;
 
-    color: #BDBDBD;
+    color: $gray6;
     font-size: 14px;
 
     padding: 19px;

@@ -7,22 +7,22 @@
     font-size: 15px;
     font-weight: 400;
 
-    background-color: #333333;
-    color: white;
+    background-color: $black2;
+    color: $white;
 
-    padding: 45px;    
+    padding: 45px;
+    
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .tab_active {
-    background-color: #FF8B38;    
-}
-
-.tab:hover {
-    cursor: pointer;
+    background-color: $orange;    
 }
 
 .tab:not(:last-child) {
-    border-bottom: 1px solid #F5F5F5;
+    border-bottom: 1px solid $gray;
 }
 
 .container_item_text {

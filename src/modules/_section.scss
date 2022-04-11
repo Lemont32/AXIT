@@ -1,20 +1,19 @@
 .section {
-    width: 100%;
-    padding: 110px 150px;
-    background-color: #ffffff; 
+    width: 100%;    
+    background-color: $white; 
 }
 
 .section_gray {
-    background-color: #F5F5F5;
+    background-color: $gray;
 }
 
 .section_darkgray {
     position: relative;
 
-    background-color: #9A9A9A; 
+    background-color: $gray2; 
 
     text-align: center;
-    color: white;
+    color: $white;
 }
 
 .section__greetins::before {
@@ -28,15 +27,15 @@
     transform: translateX(-50%);
 
     font-size: 33px;
-    color: rgba(255, 255, 255, 0.4);
+    color: $white2;
 }
 
 .section-content {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $Raleway;
     font-size: 14px;
     font-weight: 300;
 
-    color: #86878B;
+    color: $gray3;
     text-align: left;
     max-width: 395px;  
     
@@ -49,26 +48,26 @@
 }
 
 .section-content_darkgray {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $OpenSans;
     font-size: 14px;
     font-weight: 300;
 
-    color: rgba(255, 255, 255, 0.5);
-    max-width: 100%; 
-}
+    color: $white2;
+    max-width: 100%;
 
-.section-content_darkgray::after {
-    display: inline-block;
-    content: 'Insert your picture here';
-
-    position: absolute;
-    bottom: 50px;  
-    left: 50%;  
-     
-    transform: translateX(-50%);
-
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.4);
+    &::after {
+        display: inline-block;
+        content: 'Insert your picture here';
+    
+        position: absolute;
+        bottom: 50px;  
+        left: 50%;  
+         
+        transform: translateX(-50%);
+    
+        font-size: 16px;
+        color: $white2;
+    }
 }
 
 .section-content_item__inline {
@@ -81,9 +80,18 @@
     margin: 35px 0;
 }
 
+.section-content__title {
+    font-size: 14;
+    font-weight: 700;
+
+    color: black;
+
+    margin-bottom: 5px;
+}
+
 .section-content_light {
     margin-top: 70px;
-    color: #ffffff;
+    color: $white;
 
     max-width: 470px;
 }
