@@ -8,19 +8,19 @@
 .table {
     border-collapse: collapse; }
   
-.rates_td {
+.rates__td {
     width: 345px;
     font-size: 14px;
     padding: 12px 0;
     background-color: $white;
     border-bottom: 1px solid $gray; }
   
-.rates_td__black {
+.rates__td_black {
     background-color: $gray7;
     color: $white;
     border-bottom: 1px solid $gray8; }
   
-.rates_td__large {
+.rates__td_large {
     background-color: $gray7;
     color: $white;
     border-bottom: 1px solid $gray8;
@@ -30,13 +30,13 @@
     display: inline;
     font-size: 36px; }
   
-.rates_td__orange {
+.rates__td_orange {
     background-color: $orange;
     height: 5px;
     padding: 0;
     color: $white; }
   
-.rates_td__orange-text {
+.rates__td_orange-text {
     background-color: $orange;
     padding: 10px 0;
     color: $white; }

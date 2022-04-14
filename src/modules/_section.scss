@@ -16,7 +16,7 @@
     color: $white;
 }
 
-.section__greetins::before {
+.greetins::before {
     display: inline-block;
     content: 'Insert your picture here';
 
@@ -30,7 +30,7 @@
     color: $white2;
 }
 
-.section-content {
+.text {
     font-family: $Raleway;
     font-size: 14px;
     font-weight: 300;
@@ -42,12 +42,12 @@
     margin-top: 45px;
 }
 
-.section-content_center {
+.text_center {
     text-align: center;
     max-width: 100%;
 }
 
-.section-content_darkgray {
+.text_darkgray {
     font-family: $OpenSans;
     font-size: 14px;
     font-weight: 300;
@@ -70,17 +70,17 @@
     }
 }
 
-.section-content_item__inline {
+.text_item__inline {
     margin-left: 30px;
 }
 
-.section-content_item {
+.text_item {
     display: flex;
 
     margin: 35px 0;
 }
 
-.section-content__title {
+.text__title {
     font-size: 14;
     font-weight: 700;
 
@@ -89,7 +89,7 @@
     margin-bottom: 5px;
 }
 
-.section-content_light {
+.text_light {
     margin-top: 70px;
     color: $white;
 
@@ -111,11 +111,11 @@
     justify-content: space-between;
 }
 
-.features_item {
+.features__item {
     max-width: 336px;
 }
 
-.features_text {
+.features__text {
     font-size: 14px;
     font-weight: 300;
 }

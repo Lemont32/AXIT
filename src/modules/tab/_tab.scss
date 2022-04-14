@@ -1,4 +1,4 @@
-.container_item_text {
+.container__item_text {
     max-width: 455px;
 }
 
@@ -25,11 +25,11 @@
     border-bottom: 1px solid $gray;
 }
 
-.container_item_text {
+.container__item_text {
     display: none;
 }
 
-.container_item__visible {
+.container__item_visible {
     display: block;
 }
 
@@ -43,7 +43,7 @@
     margin: 48px 0;
 }
 
-.container_item__flex {
+.container__item_flex {
     display: flex;
     flex-direction: column;
 
