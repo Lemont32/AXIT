@@ -1,6 +1,6 @@
 let tabs = document.querySelectorAll('.tab')
  
-let conteinerItems = document.querySelectorAll('.container_item_text');
+let conteinerItems = document.querySelectorAll('.container__item_text');
 
 
 let changeTabs = function (item, cI) {
@@ -12,9 +12,9 @@ let changeTabs = function (item, cI) {
         item.classList.add('tab_active');
 
         for (let conteinerItem of conteinerItems) {
-            conteinerItem.classList.remove('container_item__visible')
+            conteinerItem.classList.remove('container__item_visible')
         }
-        cI.classList.add('container_item__visible');        
+        cI.classList.add('container__item_visible');        
     })
 };
     

@@ -1,20 +1,22 @@
 .section {
-    width: 100%;
-    padding: 110px 150px;
-    background-color: #ffffff; 
+    width: 100%;    
+    background-color: $white; 
 }
 
 .section_gray {
-    background-color: #F5F5F5;
+    background-color: $gray;
 }
 
 .section_darkgray {
     position: relative;
 
-    background-color: #9A9A9A; 
+    background-color: $gray2; 
+
+    text-align: center;
+    color: $white;
 }
 
-.section_darkgray::before {
+.greetins::before {
     display: inline-block;
     content: 'Insert your picture here';
 
@@ -25,20 +27,95 @@
     transform: translateX(-50%);
 
     font-size: 33px;
-    color: rgba(255, 255, 255, 0.4);
+    color: $white2;
 }
 
-.section-content {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+.text {
+    font-family: $Raleway;
+    font-size: 14px;
     font-weight: 300;
 
-    color: #86878B;
+    color: $gray3;
+    text-align: left;
+    max-width: 395px;  
+    
+    margin-top: 45px;
 }
 
-.section-content_light {
+.text_center {
+    text-align: center;
+    max-width: 100%;
+}
+
+.text_darkgray {
+    font-family: $OpenSans;
+    font-size: 14px;
+    font-weight: 300;
+
+    color: $white2;
+    max-width: 100%;
+
+    &::after {
+        display: inline-block;
+        content: 'Insert your picture here';
+    
+        position: absolute;
+        bottom: 50px;  
+        left: 50%;  
+         
+        transform: translateX(-50%);
+    
+        font-size: 16px;
+        color: $white2;
+    }
+}
+
+.text_item__inline {
+    margin-left: 30px;
+}
+
+.text_item {
+    display: flex;
+
+    margin: 35px 0;
+}
+
+.text__title {
+    font-size: 14;
+    font-weight: 700;
+
+    color: black;
+
+    margin-bottom: 5px;
+}
+
+.text_light {
     margin-top: 70px;
-    color: #ffffff;
+    color: $white;
 
     max-width: 470px;
+}
+
+.container {
+    font-size: 36px;
+    text-align: center;
+}
+
+.container_item__center-text {
+    text-align: center;
+}
+
+.features {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features__item {
+    max-width: 336px;
+}
+
+.features__text {
+    font-size: 14px;
+    font-weight: 300;
 }
