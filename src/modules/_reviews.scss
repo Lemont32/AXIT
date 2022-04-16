@@ -1,52 +1,51 @@
 .reviews {
     display: flex;
     justify-content: space-between;
-
     margin-top: 55px;
-}
 
-.reviews__item {
-    max-width: 275px;
-
-    position: relative;
-}
-
-.reviews__text {
-    background: url('../img/u229.png') no-repeat center;
-    width: auto;
-    height: 147px;
+    &__item {
+        max-width: 275px;
     
-    padding: 20px 18px;
+        position: relative;
+    }
 
-    text-align: start;
-}
+    &__text {
+        background: url('../img/u229.png') no-repeat center;
+        width: auto;
+        height: 147px;
+        
+        padding: 20px 18px;
+    
+        text-align: start;
+    }
 
-.reviews__photo {
-    position: absolute;
-    left: 4px;
-    top: 150px;
+    &__photo {
+        position: absolute;
+        left: 4px;
+        top: 150px;
+    
+        background-color: $gray8;
+    
+        width: 70px;
+        height: 70px;
+    
+        border-radius: 50%;
+    }
 
-    background-color: $gray8;
+    &__author {   
+        text-align: center;
+    
+        margin-top: 10px;
+    }
 
-    width: 70px;
-    height: 70px;
+    &__name {
+        font-size: 20px;
+        font-weight: 400;
+    
+        padding: 6px;
+    }
 
-    border-radius: 50%;
-}
-
-.reviews__author {   
-    text-align: center;
-
-    margin-top: 10px;
-}
-
-.reviews__name {
-    font-size: 20px;
-    font-weight: 400;
-
-    padding: 6px;
-}
-
-.reviews__prof {
-    font-size: inherit;
+    &__prof {
+        font-size: inherit;
+    }
 }

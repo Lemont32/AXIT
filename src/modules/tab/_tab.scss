@@ -1,9 +1,10 @@
-.container__item_text {
+.tabs-content__item {
     max-width: 455px;
+    display: none;
 }
 
 
-.tab {
+.tabs-switcher__btn {
     font-size: 15px;
     font-weight: 400;
 
@@ -17,7 +18,7 @@
     }
 }
 
-.tab_active {
+.tabs-switcher__btn_active {
     background-color: $orange;    
 }
 
@@ -25,25 +26,11 @@
     border-bottom: 1px solid $gray;
 }
 
-.container__item_text {
-    display: none;
-}
-
-.container__item_visible {
+.is-visible {
     display: block;
 }
 
-.container_item .title {
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.container_item .section-content {
-    max-width: 100%;
-    margin: 48px 0;
-}
-
-.container__item_flex {
+.tabs-switcher {
     display: flex;
     flex-direction: column;
 

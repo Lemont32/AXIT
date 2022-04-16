@@ -54,6 +54,12 @@ body {
     margin: 0;
     width: 100%;
     padding: 110px 150px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.container_item__center-text {
+    text-align: center;
 }
 
 .container_flex {
@@ -64,6 +70,16 @@ body {
 .container_preview {
     display: flex;
     justify-content: space-between;
+}
+
+.container_item .title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container_item .section-content {
+    max-width: 100%;
+    margin: 48px 0;
 }
 
 .brands {

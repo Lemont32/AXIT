@@ -5,38 +5,45 @@
     margin-top: 80px;
   }
   
-.table {
-    border-collapse: collapse; }
-  
-.rates__td {
-    width: 345px;
-    font-size: 14px;
-    padding: 12px 0;
-    background-color: $white;
-    border-bottom: 1px solid $gray; }
-  
-.rates__td_black {
-    background-color: $gray7;
-    color: $white;
-    border-bottom: 1px solid $gray8; }
-  
-.rates__td_large {
-    background-color: $gray7;
-    color: $white;
-    border-bottom: 1px solid $gray8;
-    font-size: 94px; }
-  
+.table-rates {
+    border-collapse: collapse; 
+
+    &__td {
+        width: 345px;
+        font-size: 14px;
+        padding: 12px 0;
+        background-color: $white;
+        border-bottom: 1px solid $gray; 
+    }
+
+    &__td_black {
+        background-color: $gray7;
+        color: $white;
+        border-bottom: 1px solid $gray8; 
+    }
+
+    &__td_large {
+        background-color: $gray7;
+        color: $white;
+        border-bottom: 1px solid $gray8;
+        font-size: 94px; 
+    }
+
+    &__td_orange {
+        background-color: $orange;
+        height: 5px;
+        padding: 0;
+        color: $white; 
+    }
+
+    &__td_orange-text {
+        background-color: $orange;
+        padding: 10px 0;
+        color: $white; 
+    }
+} 
+ 
 .sub {
     display: inline;
-    font-size: 36px; }
-  
-.rates__td_orange {
-    background-color: $orange;
-    height: 5px;
-    padding: 0;
-    color: $white; }
-  
-.rates__td_orange-text {
-    background-color: $orange;
-    padding: 10px 0;
-    color: $white; }
+    font-size: 36px; 
+}  
