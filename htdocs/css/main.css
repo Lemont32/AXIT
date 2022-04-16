@@ -93,14 +93,6 @@ body {
   display: flex;
   justify-content: space-between; }
 
-.container_item .title {
-  font-size: 20px;
-  font-weight: 400; }
-
-.container_item .section-content {
-  max-width: 100%;
-  margin: 48px 0; }
-
 .brands {
   position: absolute;
   top: 15px;
@@ -320,7 +312,7 @@ body {
 .tabs-switcher__btn_active {
   background-color: #FF8B38; }
 
-.tab:not(:last-child) {
+.tabs-switcher__btn:not(:last-child) {
   border-bottom: 1px solid #F5F5F5; }
 
 .is-visible {
