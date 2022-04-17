@@ -9,7 +9,7 @@
     <link href="./css/main.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <header class="header"><img src="img/Logo-header.png" alt="Logo" class="img">
+    <header class="header"> <img src="img/Logo-header.png" alt="Logo" class="img">
       <div class="header-nav"><a href="#" class="header-nav__link">Features</a><a href="#" class="header-nav__link">About</a><a href="#" class="header-nav__link">Prising</a><a href="#" class="header-nav__link">Reviews</a><a href="#" class="header-nav__link">Contact</a></div>
     </header>
     <main>
@@ -40,27 +40,29 @@
       </section>
       <section class="section section_gray">
         <div class="container container_flex">
-          <div class="container__item_flex">
-            <button type="button" class="tab tab_active">Tab 1</button>
-            <button type="button" class="tab">Tab 3</button>
-            <button type="button" class="tab">Tab 3</button>
+          <div class="tabs-switcher">
+            <button type="button" class="tabs-switcher__btn tabs-switcher__btn_active">Tab 1</button>
+            <button type="button" class="tabs-switcher__btn">Tab 3</button>
+            <button type="button" class="tabs-switcher__btn">Tab 3</button>
           </div>
-          <div class="container__item container__item_text container__item_visible">
-            <h3 class="title">Где его взять?</h3>
-            <div class="text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца.</div>
-            <button class="btn btn_orange">Download</button>
+          <div class="tabs-content">
+            <div class="tabs-content__item is-visible">
+              <h3 class="title">Где его взять?</h3>
+              <div class="text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца.</div>
+              <button class="btn btn_orange">Download</button>
+            </div>
+            <div class="tabs-content__item">
+              <h3 class="title">Почему он используется?</h3>
+              <div class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст..</div>
+              <button class="btn btn_orange">Download</button>
+            </div>
+            <div class="tabs-content__item">
+              <h3 class="title">Откуда он появился?</h3>
+              <div class="text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе.</div>
+              <button class="btn btn_orange">Download</button>
+            </div>
           </div>
-          <div class="container__item container__item_text">
-            <h3 class="title">Почему он используется?</h3>
-            <div class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст..</div>
-            <button class="btn btn_orange">Download</button>
-          </div>
-          <div class="container__item container__item_text">
-            <h3 class="title">Откуда он появился?</h3>
-            <div class="text">Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе.</div>
-            <button class="btn btn_orange">Download</button>
-          </div>
-          <div class="container__item"><img src="img/image_right_u255.png" alt="/" class="img"></div>
+          <div class="tabs-img"><img src="img/image_right_u255.png" alt="/" class="img"></div>
         </div>
       </section>
       <section class="section">
@@ -129,119 +131,118 @@
       </section>
       <section class="section section_gray">
         <div class="container">
-          <h3 class="title title_uppercase">PRICING OPTIONS
-            <div class="text text_center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.		</div>
-            <div class="rates">
-              <div class="rates__item">
-                <table class="table">
-                  <tr>
-                    <td class="rates__td rates__td_black">Basic</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td rates__td_large"> 
-                      <div class="sub">$</div><span>0</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td rates__td_black">Free for life</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td rates__td_orange"> </td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">1 GB OF SPACE</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">10 GB OF BANDWIDTH</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">3 WEBSITES</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">BASIC CUSTOMIZATION</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">WORDPRESS INTEGRATION</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">EMAIL SUPPORT</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="rates__item">
-                <table class="table">
-                  <tr>
-                    <td class="rates__td rates__td_black">Professional</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td rates__td_large"> 
-                      <div class="sub">$</div><span>19</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td rates__td_black">Monthly Payment</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td rates__td_orange-text">OUR MOST POPULAR</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">5 GB OF SPACE</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">50 GB OF BANDWIDTH</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">12 WEBSITES</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">ADVANCED  CUSTOMIZATION</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">WORDPRESS INTEGRATION</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">EMAIL SUPPORT</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="rates__item">
-                <table class="table">
-                  <tr>
-                    <td class="rates__td rates_td__black">Enterprise</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td rates_td__large"> 
-                      <div class="sub">$</div><span>70</span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td rates__td_black">Monthly Payment</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td rates__td_orange"></td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">UNLIMITED SPACE</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">UNLIMITED BANDWIDTH</td>
-                  </tr>
-                  <tr>
-                    <td class="rates_td">100 WEBSITES</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">ADVANCED  CUSTOMIZATION</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">WORDPRESS INTEGRATION</td>
-                  </tr>
-                  <tr>
-                    <td class="rates__td">EMAIL SUPPORT</td>
-                  </tr>
-                </table>
-              </div>
+          <h3 class="title title_uppercase">PRICING OPTIONS</h3>
+          <div class="text text_center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.		</div>
+          <div class="rates">
+            <div class="rates__item">
+              <table class="table-rates">
+                <tr>
+                  <td class="table-rates__td table-rates__td_black">Basic</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td table-rates__td_large"> 
+                    <div class="sub">$</div><span>0</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td table-rates__td_black">Free for life</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td table-rates__td_orange"> </td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">1 GB OF SPACE</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">10 GB OF BANDWIDTH</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">3 WEBSITES</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">BASIC CUSTOMIZATION</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">WORDPRESS INTEGRATION</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">EMAIL SUPPORT</td>
+                </tr>
+              </table>
             </div>
-          </h3>
+            <div class="rates__item">
+              <table class="table-rates">
+                <tr>
+                  <td class="table-rates__td table-rates__td_black">Professional</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td table-rates__td_large"> 
+                    <div class="sub">$</div><span>19</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td table-rates__td_black">Monthly Payment</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td table-rates__td_orange-text">OUR MOST POPULAR</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">5 GB OF SPACE</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">50 GB OF BANDWIDTH</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">12 WEBSITES</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">ADVANCED  CUSTOMIZATION</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">WORDPRESS INTEGRATION</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">EMAIL SUPPORT</td>
+                </tr>
+              </table>
+            </div>
+            <div class="rates__item">
+              <table class="table-rates">
+                <tr>
+                  <td class="table-rates__td table-rates__td_black">Enterprise</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td table-rates__td_large"> 
+                    <div class="sub">$</div><span>70</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td table-rates__td_black">Monthly Payment</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td table-rates__td_orange"></td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">UNLIMITED SPACE</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">UNLIMITED BANDWIDTH</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">100 WEBSITES</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">ADVANCED  CUSTOMIZATION</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">WORDPRESS INTEGRATION</td>
+                </tr>
+                <tr>
+                  <td class="table-rates__td">EMAIL SUPPORT</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section">

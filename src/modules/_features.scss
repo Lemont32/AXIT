@@ -1,0 +1,18 @@
+.features {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features__item {
+    max-width: 336px;
+}
+
+.features__text {
+    font-size: 14px;
+    font-weight: 300;
+}
+.features__title {
+    font-size: 20px;
+    margin: 20px 0;
+}
