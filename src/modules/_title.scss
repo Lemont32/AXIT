@@ -21,8 +21,15 @@
     }
 }
 
+.title_tabs {
+    &::after {
+        display: none
+    }
+}
+
 .title_media {
     text-align: left;
+    font-weight: 900;
 
     &::after {
         display: none;
@@ -66,8 +73,8 @@
 
     background-color: $gray;
 
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 21.1px;
 
     color: $black2;
 

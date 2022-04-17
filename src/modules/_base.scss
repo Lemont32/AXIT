@@ -51,15 +51,11 @@ body {
 }
 
 .container {
-    margin: 0;
-    width: 100%;
-    padding: 110px 150px;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 150px;
     font-size: 36px;
-    text-align: center;
-}
-
-.container_item__center-text {
-    text-align: center;
+    text-align: left;
 }
 
 .container_flex {
@@ -70,6 +66,7 @@ body {
 .container_preview {
     display: flex;
     justify-content: space-between;
+    padding: 110px 150px;
 }
 
 .brands {
