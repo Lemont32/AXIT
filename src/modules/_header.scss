@@ -1,17 +1,18 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-    height: 72px;
+.header {    
+    width: 100%;    
 
     background-color: $black;
 
-    padding: 0 150px;
-
-    vertical-align: middle;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+        flex-direction: row;        
+    }
 }
+
+
 
 .header-nav {
     display: flex;

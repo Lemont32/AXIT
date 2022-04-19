@@ -42,7 +42,10 @@ body {
 
     text-align: center;    
     font-size: 34px;
-    line-height: 305px;
+    line-height: 1.1;  
+
+    padding: 107px 90px;
+    margin-top: 20px;
 
     box-shadow: 0px 2px 40px 0px rgba($color: $black, $alpha: 0.5);
     
@@ -63,10 +66,14 @@ body {
     justify-content: space-between;
 }
 
-.container_preview {
+.preview {
     display: flex;
     justify-content: space-between;
-    padding: 110px 150px;
+    padding: 110px 0;
+
+    &__logo {
+        margin-bottom: 16px;        
+    }
 }
 
 .brands {
@@ -82,4 +89,7 @@ body {
         color: $gray4;
         transition: color 0.25s ease-in; }
 }
-    
+
+.style-content {
+    text-align: center;
+}

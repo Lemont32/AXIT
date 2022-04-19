@@ -2,6 +2,35 @@
     width: 100%;    
     background-color: $white;
     padding-bottom: 30px; 
+
+    &__inner {
+        padding: 104px 0 68px;
+    }
+}
+
+.section__inner_tabs {
+    padding: 150px 0 80px;
+}
+
+.section__inner_features {
+    padding: 100px 0 68px;
+}
+
+.section__inner_rates {
+    padding: 100px 0 80px;
+}
+
+.section__inner_reviews {
+    padding: 87px 0 147px;
+}
+
+.section__inner_style {
+    padding: 69px 0 34px;
+    text-align: center;
+}
+
+.section__inner.section__inner_contact {
+    padding: 104px 0 53px;
 }
 
 .section_gray {
@@ -40,9 +69,9 @@
     text-align: left;
     line-height: 1.5;
 
-    max-width: 395px;
+    max-width: 455px;
     
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 .text_center {
@@ -54,7 +83,7 @@
     font-family: $OpenSans;
     font-size: 14px;
     font-weight: 300;
-
+    margin-bottom: -10px;
     color: $white2;
     max-width: 100%;
 
@@ -63,7 +92,7 @@
         content: 'Insert your picture here';
     
         position: absolute;
-        bottom: 50px;  
+        bottom: 17px;  
         left: 50%;  
          
         transform: translateX(-50%);
@@ -93,11 +122,13 @@
 }
 
 .text_light {
-    margin-top: 70px;
+    margin-top: 75px;
     color: $white;
 
     max-width: 470px;
 }
 
-
+.text_content {
+    margin-top: 3px;
+}
 

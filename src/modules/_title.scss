@@ -3,22 +3,25 @@
     font-size: 20px;
     font-weight: 300;
 
-    position: relative;
-
+    position: relative;    
 
     &::after {
         content: "";
     
         position: absolute;
-        left: 50%;
-        top: 45px;
+        left: 35px;
+        top: 49px;
         transform: translateX(-50%);
     
         width: 64px;
         height: 2px;
     
         background-color: $orange;
-    }
+    }    
+}
+
+.title_sub {
+    margin-bottom: 54px;
 }
 
 .title_tabs {
@@ -43,21 +46,18 @@
     font-size: 36px;
     font-weight: 300;
     color: $white;
-    line-height: 43.2px;
+    line-height: 43px;
     text-align: left;
+    letter-spacing: -0.1px;
 
-    max-width: 520px;
-
-    margin-top: 20px;
-
+    max-width: 520px; 
 
     &::after {
         content: "";
     
         position: absolute;
-        top: 120px;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 119px;
+        left: 34px;        
     
         width: 64px;
         height: 2px;
@@ -67,38 +67,15 @@
     }
 }
 
-
-.title_form {
-    width: 100%;
-
-    background-color: $gray;
-
-    font-weight: 700;
-    font-size: 21.1px;
-
-    color: $black2;
-
-    padding: 15px 54px;
-
-    &::after {
-        display: none;
-    }
-}
-
-
-
-.title_form span{
-    color: $orange;
-}
-
 h3.title_uppercase {
     font-family: $Raleway;
     font-size: 36px;
     text-align: center;
+    margin-bottom: 47px;
     
     &::after {
         left: 50%;
-        top: 60px;
+        top: 62px;
 
         transform: translate(-50%);
 
@@ -106,6 +83,8 @@ h3.title_uppercase {
 }
 
 h3.title_uppercase_darkgray {
+margin-bottom: 52px;
+
     &::after {
         background-color: $white;
     }

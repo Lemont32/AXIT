@@ -1,7 +1,6 @@
 .tabs-content__item {
     width: 495px;
-    display: none;
-    margin-top: 40px;
+    display: none;    
 }
 
 
@@ -12,7 +11,7 @@
     background-color: $black2;
     color: $white;
 
-    padding: 45px;
+    padding: 47px 40px;
     
     &:hover {
         cursor: pointer;
@@ -36,4 +35,17 @@
     flex-direction: column;
     border-radius: 5px;
     overflow: hidden;
+}
+
+.title_tabs {
+    margin-bottom: 55px;
+    font-weight: 700;
+}
+
+.tabs-img {
+    margin-top: 24px;
+}
+
+.text_tab {
+    margin-bottom: 57px;
 }

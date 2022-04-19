@@ -12,9 +12,9 @@ let changeTabs = function (item, cI) {
     
     item.addEventListener('click', function () {
         for (let tab of tabs) {
-            tab.classList.remove('.tabs-switcher__btn_active')
+            tab.classList.remove('tabs-switcher__btn_active')
         }
-        item.classList.add('.tabs-switcher__btn_active');
+        item.classList.add('tabs-switcher__btn_active');
 
         for (let conteinerItem of conteinerItems) {
             conteinerItem.classList.remove('is-visible')

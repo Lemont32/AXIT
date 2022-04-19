@@ -3,44 +3,66 @@
     flex-direction: column;
 
     width: 360px;
-    height: 357px;  
-    
+        
     background-color: $white;
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, .16);
 
-    margin-top: 30px;
+    margin-top: 29px;
 
     overflow: hidden;
+
+    &__title {
+        width: 100%;
+    
+        background-color: $gray;
+    
+        font-weight: 700;
+        font-size: 21px;
+    
+        color: $black2;
+    
+        padding: 14px 54px;
+    
+        &::after {
+            display: none;
+        }   
+        
+        span{
+            color: $orange;
+        }
+    }
+    
+    &__wrapper {
+        padding: 17px 45px 9px;
+        margin-bottom: 38px;
+    }
 }
 
 .form-contact {
     display: flex;
     flex-direction: row;
-
-    justify-content: space-between;
-    
-    width: 100%;
-    
+    justify-content: space-between;    
+    width: 100%;    
     background-color: $white;
-
     border-radius: 0 0 5px 5px;
-
     overflow: hidden;
+    margin-top: 77px;
 }
 
 .form-contact_item {
     display: flex;
     flex-direction: column;
 
-    width: 50%;
+    width: 47%;
 }
 
 .input {
-    margin: 10px 40px;
-    margin-top: 25px;
-    padding: 10px;
+    width: 100%;
+    padding: 7px;
     
     font-size: 14px;
+    margin-bottom: 28px;
 
     color: $gray6;
 
@@ -54,21 +76,20 @@
     &:hover {
         cursor: pointer;    
     }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 
-.input_submit {
-    flex-wrap: wrap;
-
-    padding: 15px;
+.input_submit {    
+    padding: 20px 0 15px;
 
     background-color: $orange;
-
+    
     font-size: 15px;
     color: $white;
-    margin: 0;
-
-    margin-top: 38.5px;
     
     transition: background-color 0.2s linear;
 
@@ -76,6 +97,29 @@
         background-color: $orange2;
         cursor: pointer;
     }
+
+    border: none;
+}
+
+.input_send {
+    display: block;
+    width: 144px;
+    margin: 43px auto;
+    padding: 14px 0 13px;
+    border-radius: 5px;
+    background-color: $orange;
+    
+    font-size: 15px;
+    color: $white;
+    
+    transition: background-color 0.2s linear;
+
+    &:hover {
+        background-color: $orange2;
+        cursor: pointer;
+    }
+
+    border: none;
 }
 
 .textarea {

@@ -6,7 +6,8 @@
   }
   
 .table-rates {
-    border-collapse: collapse; 
+    border-collapse: collapse;
+    text-align: center;
 
     &__td {
         width: 345px;
@@ -18,15 +19,26 @@
 
     &__td_black {
         background-color: $gray7;
-        color: $white;
-        border-bottom: 1px solid $gray8; 
+        color: $white;        
+        font-size: 20px;
+        padding: 18px 0;
+    }
+
+    &__td_small {
+        background-color: $gray7;
+        color: $white;        
+        font-size: 14px;
+        font-style: italic;
+        padding: 0 0 15px;
     }
 
     &__td_large {
         background-color: $gray7;
         color: $white;
-        border-bottom: 1px solid $gray8;
-        font-size: 94px; 
+        border-bottom: 1px solid $gray7;
+        font-size: 88px; 
+        font-weight: 900;
+        padding: 17px 0 0;
     }
 
     &__td_orange {
