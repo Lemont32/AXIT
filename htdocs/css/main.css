@@ -86,14 +86,16 @@ body {
   background: rebeccapurple; }
   @media (max-width: 1440px) {
     .container {
-      background: red; } }
+      background: red;
+      padding: 0 80px; } }
   @media (max-width: 1024px) {
     .container {
+      padding: 0 40px;
       background: green; } }
   @media (max-width: 768px) {
     .container {
       background: blue; } }
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .container {
       background: yellow; } }
 

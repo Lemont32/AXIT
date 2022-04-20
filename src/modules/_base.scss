@@ -63,9 +63,11 @@ body {
 
     @media ($wide) {
         background: red;
+        padding: 0 80px;
     }
 
     @media ($medium) {
+        padding: 0 40px;
         background: green;
     }
 
@@ -73,7 +75,7 @@ body {
         background: blue;
     }
 
-    @media ($small) {
+    @media ($phone) {
         background: yellow;
     }
 }
