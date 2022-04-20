@@ -82,7 +82,20 @@ body {
   max-width: 1400px;
   padding: 0 150px;
   font-size: 36px;
-  text-align: left; }
+  text-align: left;
+  background: rebeccapurple; }
+  @media (max-width: 1440px) {
+    .container {
+      background: red; } }
+  @media (max-width: 1024px) {
+    .container {
+      background: green; } }
+  @media (max-width: 768px) {
+    .container {
+      background: blue; } }
+  @media (max-width: 768px) {
+    .container {
+      background: yellow; } }
 
 .container_flex {
   display: flex;
