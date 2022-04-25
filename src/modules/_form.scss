@@ -12,6 +12,10 @@
 
     overflow: hidden;
 
+    @media ($phone) {
+        width: 100%;
+    }
+
     &__title {
         width: 100%;
     
@@ -36,7 +40,7 @@
     &__wrapper {
         padding: 17px 45px 9px;
         margin-bottom: 38px;
-    }
+    }    
 }
 
 .form-contact {
@@ -48,6 +52,10 @@
     border-radius: 0 0 5px 5px;
     overflow: hidden;
     margin-top: 77px;
+
+    @media ($phone) {
+        flex-direction: column;
+    }
 }
 
 .form-contact_item {
@@ -55,6 +63,10 @@
     flex-direction: column;
 
     width: 47%;
+
+    @media ($phone) {
+        width: 100%;
+    }
 }
 
 .input {
@@ -79,6 +91,10 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @media ($phone) {
+        text-align: center;
     }
 }
 

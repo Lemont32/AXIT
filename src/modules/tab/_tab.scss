@@ -1,7 +1,23 @@
+.tabs-content {
+    
+    @media ($small) {
+        margin: 0 auto;;        
+    }
+} 
+
 .tabs-content__item {
     width: 495px;
-    display: none;    
-}
+    display: none;
+    margin: 0 15px;
+    @media ($small) {
+        text-align: center;        
+    }
+
+    @media ($phone) {
+        width: 325px;        
+    }
+} 
+
 
 
 .tabs-switcher__btn {
@@ -13,6 +29,14 @@
 
     padding: 47px 40px;
     
+    @media ($small){
+        padding: 27px 20px;
+    }
+
+    @media ($phone){
+        padding: 15px 10px;
+    }
+
     &:hover {
         cursor: pointer;
     }
@@ -24,6 +48,11 @@
 
 .tabs-switcher__btn:not(:last-child) {
     border-bottom: 1px solid $gray;
+
+    @media ($small) {
+        border-bottom: none;
+        border-right: 1px solid $gray;        
+    }
 }
 
 .is-visible {
@@ -35,6 +64,11 @@
     flex-direction: column;
     border-radius: 5px;
     overflow: hidden;
+
+    @media ($small) {
+        flex-direction: row;
+        margin: 0 auto;              
+    }
 }
 
 .title_tabs {
@@ -44,8 +78,17 @@
 
 .tabs-img {
     margin-top: 24px;
+
+    @media ($small) {
+        margin: 20px auto 0;        
+    }
 }
 
 .text_tab {
     margin-bottom: 57px;
+
+    @media ($small) {
+        text-align: center; 
+        max-width: none;      
+    }
 }

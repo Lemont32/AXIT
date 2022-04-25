@@ -1,8 +1,38 @@
 .rates {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end; 
+    //display: flex;
+    //justify-content: space-between;
+    //align-items: flex-end; 
     margin-top: 80px;
+
+    &__item {
+        margin: 0 20px;
+        width: 340px;
+    }
+
+    @media ($medium) {
+        max-width: 340px;
+        margin: 40px auto 0;
+    }
+  
+    .slick-prev:before, 
+    .slick-next:before {
+        color: $black;
+        font-size: 36px;
+        font-weight: 900;  
+        padding: 0 10px;
+        background-color: $black2;    
+        color: $orange2;
+        border-radius: 50%;
+    }
+
+    .slick-prev:before {
+        content: '<';
+    }
+
+    .slick-next:before {
+        content: '>';
+    }
+
   }
   
 .table-rates {
@@ -11,7 +41,7 @@
 
     &__td {
         width: 345px;
-        font-size: 14px;
+        font-size: 10px;
         padding: 12px 0;
         background-color: $white;
         border-bottom: 1px solid $gray; 
@@ -20,7 +50,7 @@
     &__td_black {
         background-color: $gray7;
         color: $white;        
-        font-size: 20px;
+        font-size: 14px;
         padding: 18px 0;
     }
 
@@ -36,7 +66,7 @@
         background-color: $gray7;
         color: $white;
         border-bottom: 1px solid $gray7;
-        font-size: 88px; 
+        font-size: 58px; 
         font-weight: 900;
         padding: 17px 0 0;
     }

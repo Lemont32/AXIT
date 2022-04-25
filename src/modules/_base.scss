@@ -51,6 +51,17 @@ body {
     
     
     color: rgba($color: $white, $alpha: 0.5);
+
+    @media ($wide) {        
+        margin-bottom: 20px;
+    }
+
+    @media ($phone) {
+        width: 325px;
+        height: 225px;
+        font-size: 24px;
+        padding: 87px 90px;
+    }
 }
 
 .container {
@@ -59,30 +70,37 @@ body {
     padding: 0 150px;
     font-size: 36px;
     text-align: left;
-    background: rebeccapurple;
+    //background: rebeccapurple;
 
     @media ($wide) {
-        background: red;
-        padding: 0 80px;
+        //background: red;
+        padding: 0 45px;
     }
 
     @media ($medium) {
-        padding: 0 40px;
-        background: green;
+        padding: 0 80px;
+        //background: green;
     }
 
     @media ($small) {
-        background: blue;
+        //background: blue;
+        padding: 0 40px;
     }
 
     @media ($phone) {
-        background: yellow;
+        //background: yellow;
+        padding: 0 20px;
     }
 }
 
 .container_flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media ($medium) {
+        justify-content: center;
+    }
 }
 
 .preview {
@@ -92,6 +110,33 @@ body {
 
     &__logo {
         margin-bottom: 16px;        
+    }
+
+    @media ($small) {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.preview__item {
+    @media ($small) {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.preview__item .text_light {
+    @media ($small) {        
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+.preview__item:first-child {
+    margin-right: 60px; 
+    
+    @media ($small) {
+        margin: 0 auto;
     }
 }
 

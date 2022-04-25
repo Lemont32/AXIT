@@ -2,10 +2,19 @@
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
+
+    @media ($phone) {
+        flex-direction: column;
+    }
 }
 
 .features__item {
     max-width: 336px;
+
+    @media ($phone) {
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
 }
 
 .features__text {

@@ -12,92 +12,96 @@
     }
 }
 
-
-
 .header-nav {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    font-weight: 300;
-    color: $white;
+  height: 100%;
 
-    &__link {
-        position: relative;
-
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: -3px;
-            left: 0;
-
-            width: 0;
-            height: 1px;
-            background-color: $white;
-            
-            transition: width 0.25s ease-in;
-        }
-    }
-
-    &__link:hover {
-        &::after {
-            width: 100%;
-        }
-    }
-
-    @media ($phone) {
-        display: none;
-    }
-}
-
-.header-nav a:not(:last-child) {
-    margin-right: 50px;
-}
-
-.header-nav_burger {
+  &__btn {
     display: none;
 
-    @media ($phone) {
-        display: block;
+    @media ($small) {
+      display: flex;
+      align-items: center; 
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 2;
     }
-}
 
-#nav-menu {
-    opacity: 0;
+    & > span,
+    & > span::before,
+    & > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $gray8;
+      transition: transform .25s ease-in;
+    }
+    
+    & > span::before {
+      content: '';
+      top: -8px;
+    }
+    
+    & > span::after {
+      content: '';
+      top: 8px;
+    }
   }
-
-.header-nav__btn {
-    display: flex;
-    align-items: center; 
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 2;
-  }
-
-.header-nav__btn > span,
-.header-nav__btn > span::before,
-.header-nav__btn > span::after {
-display: block;
-position: absolute;
-width: 100%;
-height: 2px;
-background-color: $gray8;
-}
-
-.header-nav__btn > span::before {
-content: '';
-top: -8px;
-}
-
-.header-nav__btn > span::after {
-content: '';
-top: 8px;
-}
+} 
 
 .menu-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 300;
+  color: $white;
+  align-items: center;
+  height: 100%;
+
+  &__link {
+    position: relative;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+
+        width: 0;
+        height: 1px;
+        background-color: $white;
+        
+        transition: width 0.25s ease-in;
+    }
+
+    @media ($small) {
+      display: block;
+      padding: 12px 24px;
+      color: $white;
+      font-family: $OpenSans, sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-right: 0;
+    }
+
+  }
+
+  &__link:hover {
+      &::after {
+          width: 100%;
+      }
+  }
+
+  @media ($small) {
     display: block;
     position: fixed;
     visibility: hidden;
@@ -113,35 +117,30 @@ top: 8px;
     color: $white;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     z-index: 1;
-  }
+    transform: translateX(100%);
+    transition: transform 0.25s ease-in;
+  }    
+}  
 
-  .menu-list li {
-    display: block;
-    padding: 12px 24px;
-    color: $white;
-    font-family: $OpenSans, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    
-  }
-  
-  .menu-list li:hover {
-    background-color: $body;
-  }
+#nav-menu {
+  display: none;
+}
 
-  #nav-menu:checked ~ .header-nav__btn > span {
-    transform: rotate(45deg);
-  }
-  #nav-menu:checked ~ .header-nav__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #nav-menu:checked ~ .header-nav__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #nav-menu:checked ~ .menu-list {
-    visibility: visible;
-    right: 0;
-  }
+#nav-menu:checked ~ .header-nav__btn > span {
+  transform: rotate(45deg);
+}
+
+#nav-menu:checked ~ .header-nav__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#nav-menu:checked ~ .header-nav__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);  
+}
+
+#nav-menu:checked ~ .menu-list {
+  visibility: visible;
+  transform: translateX(0);
+}

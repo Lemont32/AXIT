@@ -2,26 +2,46 @@
     width: 100%;    
     background-color: $white;
     padding-bottom: 30px; 
-
+    
     &__inner {
-        padding: 104px 0 68px;
+        padding: 104px 0 68px;    
+    
+        @media ($medium) {
+            padding: 50px 0 15px;
+        }
     }
 }
 
 .section__inner_tabs {
     padding: 150px 0 80px;
+
+    @media ($medium) {
+        padding: 150px 0 20px;
+    }
 }
 
 .section__inner_features {
     padding: 100px 0 68px;
+
+    @media ($medium) {
+        padding: 50px 0 45px;
+    }
 }
 
 .section__inner_rates {
     padding: 100px 0 80px;
+
+    @media ($medium) {
+        padding: 50px 0 20px;
+    }
 }
 
 .section__inner_reviews {
     padding: 87px 0 147px;
+
+    @media ($medium) {
+        padding: 70px 0 35px;
+    }
 }
 
 .section__inner_style {
@@ -31,6 +51,10 @@
 
 .section__inner.section__inner_contact {
     padding: 104px 0 53px;
+
+    @media ($medium) {
+        padding: 55px 0 15px;
+    }
 }
 
 .section_gray {
@@ -58,6 +82,10 @@
 
     font-size: 33px;
     color: $white2;
+
+    @media ($small) {
+        top: 0;  
+    }
 }
 
 .text {
@@ -126,6 +154,14 @@
     color: $white;
 
     max-width: 470px;
+
+    @media ($medium) {
+        margin-top: 45px;
+    }
+
+    @media ($phone) {
+        margin-top: 25px;
+    }
 }
 
 .text_content {
