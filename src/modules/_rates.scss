@@ -3,37 +3,27 @@
     //justify-content: space-between;
     //align-items: flex-end; 
     margin-top: 80px;
+    height: 450px;
 
     &__item {
-        margin: 0 20px;
-        width: 340px;
+        margin: 0;
+        width: 330px;
     }
 
     @media ($medium) {
         max-width: 340px;
         margin: 40px auto 0;
     }
-  
-    .slick-prev:before, 
-    .slick-next:before {
-        color: $black;
-        font-size: 36px;
-        font-weight: 900;  
-        padding: 0 10px;
-        background-color: $black2;    
-        color: $orange2;
-        border-radius: 50%;
-    }
-
-    .slick-prev:before {
-        content: '<';
-    }
-
-    .slick-next:before {
-        content: '>';
-    }
-
   }
+
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+    color: $orange;
+    background-color: $black2;
+    border-radius: 50%;
+    padding: 5px 13px;
+    font-size: 36px;
+}
   
 .table-rates {
     border-collapse: collapse;
