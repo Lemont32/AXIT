@@ -1,5 +1,5 @@
 {
-	"name": "new-project",
+	"name": "axit",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
@@ -8,7 +8,7 @@
 		"build": "gilp build",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "vasiliy-ignatov",
+	"author": "a-simanov",
 	"license": "ISC",
 	"devDependencies": {
 		"bootstrap": "^4.4.1",
