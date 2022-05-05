@@ -3,12 +3,20 @@
     padding: 0;
 
     box-shadow: 0 1px 2px 1px $gray3;   
+
+    @media ($phone) {
+        padding-bottom: 30px;
+    }
 }
 
 .container_media {
     position: relative;
-
-    padding: 17px 150px;    
+    padding: 17px 150px; 
+    
+    @media ($wide) {
+        padding: 17px 80px;
+        padding-bottom: 120px;
+    }
 }
 
 .container_media  .title { 
@@ -28,6 +36,16 @@
     position: absolute;
     top: 30px;
     right: 150px;
+    
+    @media ($wide) {
+        right: 80px;
+        text-align: center;
+    }
+
+    @media ($medium) {
+        left: 20px;
+        top: 120px;
+    }
 }
 
 .brands i {
@@ -38,6 +56,20 @@
     &:hover {
         color:$gray4;
         transition: color 0.25s ease-in;        
+    }
+
+    @media ($wide) {
+        margin-left: 20px;
+    }
+
+    @media ($medium) {
+        margin-left: 25px;  
+        font-size: 32px;      
+    }
+
+    @media ($small) {        
+        margin-left: 20px;  
+        font-size: 30px;
     }
 }
 

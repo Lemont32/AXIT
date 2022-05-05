@@ -2,9 +2,24 @@ header.header
   .container
     .header__wrapper
       img.img(src='img/Logo-header.png' alt='Logo')
-      .header-nav
+      //* .header-nav
         a.header-nav__link(href='#') Features
         a.header-nav__link(href='#') About
         a.header-nav__link(href='#') Prising
         a.header-nav__link(href='#') Reviews
-        a.header-nav__link(href='#') Contact
+        a.header-nav__link(href='#') Contact *//
+      .header-nav
+        input(type="checkbox" id="nav-menu")
+        label(for="nav-menu").header-nav__btn
+          span
+        ul.menu-list
+          li.menu-list__link
+            a(href='#') Features
+          li.menu-list__link
+            a(href='#') About
+          li.menu-list__link
+            a(href='#') Prising
+          li.menu-list__link
+            a(href='#') Reviews
+          li.menu-list__link
+            a(href='#') Contact
